@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-@!_uezga(g%ix0sk0_sta+)wb^4)olw6*!uhq+p2&sr%b-qfbl'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = []
 
@@ -62,6 +62,7 @@ ROOT_URLCONF = 'murage.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'DIRS': [],
         'APP_DIRS': True,
         'OPTIONS': {
