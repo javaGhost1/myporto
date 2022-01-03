@@ -1,0 +1,122 @@
+body{
+    font-size: 1rem;
+    padding: 0px;
+    margin: 0px;
+    font-family: "Gravity-Regular";
+}
+
+#flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.fixed-top{
+    position: fixed;
+    top: 0;
+    padding: 21px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+.navbar-brand{
+    margin: 0 210px 0 20px;
+}
+
+#main-body{
+    
+    /* background-image: url('/images/image2.jpg') 50% 0 no-repeat fixed; */
+    /* background-color: aqua; */
+    position: relative;
+    
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* opacity: 0.65;  */
+    background-position: center;
+    background-size: cover; 
+    height: 750px;
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+#msg{
+    font-size: 3.35rem;
+    letter-spacing: 1.2rem;
+    text-transform: uppercase;
+}
+
+.banner-msg{
+    /* display: flex;
+    justify-content: center; */
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+    color: #fff;
+    font-size: 1.75em;
+    font-weight: 600;
+    font-family: 'Gravity-Regular';
+    /* text-transform: uppercase; */
+    
+    
+}
+
+.home-banner p{
+    font-weight: normal;
+    font-size: 1.65em;
+    padding: 10px;
+}
+.icons ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+.icons ul li{
+    padding: 10px;
+}
+.icons ul img{
+    height: 40px;
+}
+.my-work{
+    background-color: #191919;
+    color: #fff;
+    padding: 40px 10px;
+    display: flex;
+    flex-direction: column;   
+}
+.my-work h3{
+    padding: 20px;
+}
+.list-panel{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.list-panel h5{
+    padding: 10px;
+}
+#popular{
+    background-color: #fff;
+    padding: 20px;
+}
+/* contact page */
+.form{
+    padding: 30px;
+    width: 60vw;
+    
+}
+
+/* software page */
+
+/* footer */
+.footer{
+    background-color: #191919;
+    padding: 20px;
+    
+}
+.footer-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

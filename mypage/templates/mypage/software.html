@@ -1,0 +1,41 @@
+{% extends 'mypage/base.html' %}
+
+{% block content %}
+<div  class='table-responsive'>
+    <h2 class="banner-msg" style="top: 10px;">Software Repository</h2>
+
+    <table class="table">
+        <caption>List of Projects</caption>
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Title:</th>
+            <th scope="col">Description:</th>
+            <th scope="col">Language:</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>A-Pathfinding-Visualization</td>
+            <td>Algorithm in java</td>
+            <td>Java</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Personal-Website</td>
+            <td>Django version</td>
+            <td>Django</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Air-Conditioner-Arduino</td>
+            <td>When your AC doesn't work.. </td>
+            <td>Arduino</td>
+          </tr>
+        </tbody>
+      </table>
+
+</div>
+
+{% endblock content %}}
