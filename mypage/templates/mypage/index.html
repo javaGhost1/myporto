@@ -3,8 +3,10 @@
 {% load bootstrap4 %}
 
 {% block content%}
+{% include 'mypage/navbar.html' %}
+
    <main id="main-body" style = "background-image: url({% static '/images/image2.jpg' %}); ">
-    
+
             <div class='home-banner'> 
                 <h3 id="msg" class="banner-msg">Dennis <br> Murage</h3>
 
@@ -13,14 +15,14 @@
             </div>
             <div class="icons">
                 <ul>
-                    <li><a href="#" ><img src=" {% static 'images/email.png'%}" alt=""></a></li>
+                    <li><a href="#" ><img src="{% static 'images/email.png'%}" alt="you"></a></li>
                     <li><a href="https://github.com/javaGhost1" target="_blank"><img src="{% static 'images/github.png'%}" alt=""></a></li>
                     <li><a href="https://twitter.com/home" target="_blank"><img src="{% static 'images/twitter_transparent.png' %}" alt=""></a></li>
                     <li><a href="https://www.instagram.com/njerufreeman/" target="_blank"><img src="{% static 'images/instagram.png'%}" alt=""></a></li>
                 </ul>
             </div>
             <a class="ct-btn-scroll ct-js-btn-scroll" href="#section2"><img alt="Arrow Down Icon" src="{% static 'images/arrow-down-1.png' %}"></a>
-</main>
+    </main>
 <section id="section2" class="my-work">
     <h3 id="msg">My Work</h3>
     <p>I was never the best at school or academics, I’m just a super curious guy. I exist to try out different activities that interest me. I spend a lot of time building software and electronics, but there’s also a lot more to it. I’ve been working on a video format to document the logic, reasoning, and problems encountered during the process of learning engineering. A combination of innovation and storytelling.</p>
@@ -134,22 +136,9 @@
         </p>
 
     </div> -->
-    <div>
-        <footer class="footer container-fluid">
-            <div class="container footer-content">
-                <p class="footerText">STAY CONNECTED</p>
-                <div class="icons">
-                    <ul>
-                        <li><a href="#" ><img src=" {% static 'images/email.png'%}" alt=""></a></li>
-                        <li><a href="https://github.com/javaGhost1" target="_blank"><img src="{% static 'images/github.png'%}" alt=""></a></li>
-                        <li><a href="https://twitter.com/home" target="_blank"><img src="{% static 'images/twitter_transparent.png' %}" alt=""></a></li>
-                        <li><a href="https://www.instagram.com/njerufreeman/" target="_blank"><img src="{% static 'images/instagram.png'%}" alt=""></a></li>
-                    </ul>
-                </div>
-            </div>
-        </footer>
-    </div>
+    {% include 'mypage/footer.html' %}
 
-</section>
+    </section>
+
 {% endblock content%}
 

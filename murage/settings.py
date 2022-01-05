@@ -34,6 +34,7 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     # myapps
     'mypage',
+    'blogs',
 
     # third party apps
     'bootstrap4',

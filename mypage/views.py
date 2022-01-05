@@ -1,4 +1,5 @@
-from django.shortcuts import render
+
+from django.shortcuts import render, redirect, get_object_or_404
 from .forms import *
 from django.core.mail import send_mail, BadHeaderError
 from django.http import HttpResponse
@@ -17,9 +18,7 @@ def projects(request):
     context={}
     return render(request, 'mypage/projects.html')
 
-def blogs(request):
-    context={}
-    return render(request, 'mypage/blogs.html')
+
 
 def contact(request):
     form = contactForm()

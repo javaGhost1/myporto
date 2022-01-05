@@ -1,6 +1,7 @@
 {% extends 'mypage/base.html' %}
 
 {% block content %}
+{% include 'mypage/navbar.html' %}
 <div  class='table-responsive'>
     <h2 class="banner-msg" style="top: 10px;">Software Repository</h2>
 
@@ -37,5 +38,5 @@
       </table>
 
 </div>
-
+{% include 'mypage/footer.html' %}
 {% endblock content %}}

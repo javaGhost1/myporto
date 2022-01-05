@@ -3,12 +3,13 @@
 {% load bootstrap4 %}
 
 {% block content %}
+{% include 'mypage/navbar.html' %}
     <div style="padding:5px;">
-    <h4 style=" padding-top: 80px;">Message me for any inquiry.</h4>
-    <p>
+        <h4 style=" padding-top: 80px;">Message me for any inquiry.</h4>
+        <p>
         Please enter your name, email address and message.
         I will be happy to contact you directly and answer your questions.
-    </p>
+        </p>
     </div>
     <form method="post" class="form">
         {% csrf_token %}
