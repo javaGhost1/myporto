@@ -1,0 +1,45 @@
+{% extends 'mypage/base.html' %}
+{% load static %}
+{% load bootstrap4 %}
+
+
+{% block content %}
+{% include 'mypage/navbar.html' %}
+
+<br>
+<br>
+<br>
+
+<div class='icons' id='bg-icons' style="background: black;">
+    <ul>
+        <li><a href="#" ><img src=" {% static 'images/email.png'%}" alt=""></a></li>
+        <li><a href="https://github.com/javaGhost1" target="_blank"><img src="{% static 'images/github.png'%}" alt=""></a></li>
+        <li><a href="https://twitter.com/home" target="_blank"><img src="{% static 'images/twitter_transparent.png' %}" alt=""></a></li>
+        <li><a href="https://www.instagram.com/njerufreeman/" target="_blank"><img src="{% static 'images/instagram.png'%}" alt=""></a></li>
+    </ul>
+</div> 
+
+<div class="container">
+    <div class='card mb-3' style="border:none;">
+        <ul>
+            {% for blog in blogs %}
+                <li>
+                    <a class='blog-link' href={% url 'blogs:blog' blog.id%}>
+                        <h4 class="header-text">{{blog.topic}}</h4>
+                        <p>{{blog.text|safe|truncatewords:25}}</p>
+                        <p>{{blog.date_added|date:'M d, Y'}}</p>
+                       
+                        
+                    </a>
+                    <br>
+                </li>
+            
+            {%empty%}
+                <li> No blogs yet</li>
+            {% endfor %}
+        </ul>
+    </div>
+
+</div>
+{% include 'mypage/footer.html' %}
+{% endblock content %}

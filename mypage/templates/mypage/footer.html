@@ -1,0 +1,21 @@
+{% extends 'mypage/base.html' %}
+{% load static %}
+
+{% block content %}
+<div>
+    <footer class="footer container-fluid">
+        <div class="container footer-content">
+            <p class="footerText">STAY CONNECTED</p>
+            <div class="icons">
+                <ul>
+                    <li><a href="#" ><img src=" {% static 'images/email.png'%}" alt=""></a></li>
+                    <li><a href="https://github.com/javaGhost1" target="_blank"><img src="{% static 'images/github.png'%}" alt=""></a></li>
+                    <li><a href="https://twitter.com/home" target="_blank"><img src="{% static 'images/twitter_transparent.png' %}" alt=""></a></li>
+                    <li><a href="https://www.instagram.com/njerufreeman/" target="_blank"><img src="{% static 'images/instagram.png'%}" alt=""></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</div>
+
+{% endblock content %}
