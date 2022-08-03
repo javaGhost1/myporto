@@ -4,13 +4,13 @@
 
 {% block content %}
 {% include 'mypage/navbar.html' %}
-    <div style="padding:5px;">
+    <div class='contact' style="padding:5px;">
         <h4 style=" padding-top: 80px;">Message me for any inquiry.</h4>
         <p>
         Please enter your name, email address and message.
         I will be happy to contact you directly and answer your questions.
         </p>
-    </div>
+    
     <form method="post" class="form">
         {% csrf_token %}
         {% bootstrap_form form %}
@@ -19,6 +19,7 @@
         {% endbuttons %}
         <input type="hidden" name='next' value="{% url 'mypage:index'%}"/>
     </form>
+</div>
     <br>
     <div>
         <footer class="footer container-fluid">

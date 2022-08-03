@@ -50,7 +50,7 @@ body{
     
     background-repeat: no-repeat;
     background-attachment: fixed;
-    /* opacity: 0.65;  */
+ 
     background-position: center;
     background-size: cover; 
     height: 750px;
@@ -107,17 +107,23 @@ body{
 .my-work{
     background-color: #191919;
     color: #fff;
-    padding: 40px 10px;
+    padding: 40px 30px;
     display: flex;
     flex-direction: column;   
 }
 .my-work h3{
     padding: 20px;
 }
+.my-work p{
+    letter-spacing: 1px;
+    line-height: 1.4em;
+    font-size: 16px;
+}
 .list-panel{
     padding: 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 .list-panel h5{
     padding: 10px;
@@ -178,6 +184,7 @@ body{
     font-weight: 400;
     
 }
+
 #bt{
     font-family: fell, Georgia, Cambria, "Times New Roman", Times, serif;
     color: rgba(41, 41, 41, 1);

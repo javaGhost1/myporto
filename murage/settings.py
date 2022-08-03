@@ -136,8 +136,17 @@ STATICFILES_DIRS = [
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
-DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+# DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+# EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'dennismurage97@gmail.com'
+# EMAIL_HOST_PASSWORD = 'Secret09!'
+
+EMAIL_HOST_PASSWORD = 'hlgrgpenoygevuua'
+# 587 465
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
 
 django_heroku.settings(locals())
 
